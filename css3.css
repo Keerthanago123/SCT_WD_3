@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: #ebf3b4; /* Soft background color */
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+}
+
+h1 {
+    color: #13471a; /* green shade for title */
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#message {
+    font-size: 1.5rem;
+    color: #7b5f5f; /* red for the message */
+    margin-bottom: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d1c4e9; /* Light lavender background */
+    border: 3px solid #4527a0; /* Dark purple for the border */
+    font-size: 3rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effect */
+.cell:hover {
+    background-color: #b39ddb; /* Lighter lavender on hover */
+    transform: scale(1.1);
+}
+
+/* X and O colors */
+.cell.x {
+    color: #d32f2f; /* Red for X */
+}
+
+.cell.o {
+    color: #1976d2; /* Blue for O */
+}
+
+#restart {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #81c784; /* Light green for the button */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#restart:hover {
+    background-color: #4caf50; /* Darker green on hover */
+}
